@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Il Mio Software Python</title>
-    <!-- Link corretti alle librerie PyScript -->
+    <!-- Carica il motore di PyScript -->
     <link rel="stylesheet" href="https://pyscript.net">
     <script type="module" src="https://pyscript.net"></script>
 </head>
 <body>
     <h1>Il mio Software Python</h1>
+    <hr>
+    <!-- Qui appariranno i risultati dei tuoi print -->
     <div id="output"></div> 
 
     <py-config>
-        # Elenco dei file da scaricare da GitHub
+        # Questa lista dice a GitHub quali file scaricare per far girare il programma
         files = [
             "dati_stanze.py", 
             "Algoritmo.py", 
@@ -32,11 +34,10 @@
 
     <py-script>
         import Algoritmo
-        print("Sistema pronto. Avvio Algoritmo...")
+        print("--- Programma Avviato ---")
         
-        # IMPORTANTE: Se il tuo Algoritmo.py esegue tutto all'importazione, 
-        # non serve altro. Se invece ha una funzione 'main', scrivi:
-        # Algoritmo.main()
+        # Se il tuo codice in Algoritmo.py non parte da solo, 
+        # aggiungi qui sotto il nome della funzione da avviare.
     </py-script>
 </body>
 </html>
